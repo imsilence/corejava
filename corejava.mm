@@ -1,7 +1,7 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1533482607261" ID="ID_408861568" MODIFIED="1533511306068" TEXT="JAVA&#x6838;&#x5fc3;&#x6280;&#x672f;">
-<node CREATED="1533511306031" ID="ID_776612772" MODIFIED="1533511341057" POSITION="right" TEXT="00.&#x5de5;&#x5177;">
+<node CREATED="1533511306031" FOLDED="true" ID="ID_776612772" MODIFIED="1533601989798" POSITION="right" TEXT="00.&#x5de5;&#x5177;">
 <node CREATED="1533482654873" ID="ID_1161792933" MODIFIED="1533511594110" TEXT="Java">
 <node CREATED="1533482708536" ID="ID_722939747" MODIFIED="1533482713057" TEXT="java -version"/>
 </node>
@@ -30,7 +30,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1533511332103" ID="ID_204837664" MODIFIED="1533511600778" POSITION="right" TEXT="01.Java&#x7a0b;&#x5e8f;&#x8bbe;&#x8ba1;&#x6982;&#x8981;">
+<node CREATED="1533511332103" FOLDED="true" ID="ID_204837664" MODIFIED="1533601988664" POSITION="right" TEXT="01.Java&#x7a0b;&#x5e8f;&#x8bbe;&#x8ba1;&#x6982;&#x8981;">
 <node CREATED="1533511604447" ID="ID_382260984" MODIFIED="1533511620186" TEXT="Java&#x662f;&#x4e00;&#x4e2a;&#x5b8c;&#x6574;&#x7684;&#x5e73;&#x53f0;">
 <node CREATED="1533511621436" ID="ID_758743308" MODIFIED="1533511682151" TEXT="&#x5e9e;&#x5927;&#x7684;&#x5e93;">
 <node CREATED="1533511787642" ID="ID_938904839" MODIFIED="1533511788449" TEXT="&#x5305;&#x542b;&#x5927;&#x91cf;&#x53ef;&#x91cd;&#x7528;&#x7684;&#x4ee3;&#x7801; ">
@@ -97,7 +97,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1533515557424" ID="ID_1400605449" MODIFIED="1533515569952" POSITION="right" TEXT="02.Java&#x7a0b;&#x5e8f;&#x8bbe;&#x8ba1;&#x73af;&#x5883;">
+<node CREATED="1533515557424" FOLDED="true" ID="ID_1400605449" MODIFIED="1533602367418" POSITION="right" TEXT="02.Java&#x7a0b;&#x5e8f;&#x8bbe;&#x8ba1;&#x73af;&#x5883;">
 <node CREATED="1533515977453" ID="ID_991806081" MODIFIED="1533515981567" TEXT="JDK&#x5b89;&#x88c5;">
 <node CREATED="1533515991065" ID="ID_1927184103" MODIFIED="1533515993176" TEXT="&#x4e0b;&#x8f7d;">
 <node CREATED="1533516185150" ID="ID_1224801521" MODIFIED="1533516186618" TEXT="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"/>
@@ -113,8 +113,7 @@
       tar zvxf jdk-8u181-linux-x64.tar.gz -C /usr/local/
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1533515998495" ID="ID_83438720" MODIFIED="1533516004823" TEXT="&#x914d;&#x7f6e;">
@@ -144,8 +143,7 @@
       fi
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1533516414433" ID="ID_1098778392" MODIFIED="1533516416609" TEXT="&#x6d4b;&#x8bd5;">
@@ -154,6 +152,67 @@
 <node CREATED="1533516452880" ID="ID_1264204361" MODIFIED="1533516458429" TEXT="javac -version"/>
 </node>
 </node>
+<node CREATED="1533565996114" ID="ID_1801676648" MODIFIED="1533601372109" TEXT="&#x7b2c;&#x4e00;&#x4e2a;&#x63a7;&#x5236;&#x53f0;&#x7a0b;&#x5e8f;">
+<node CREATED="1533566096850" ID="ID_936138796" MODIFIED="1533566099455" TEXT="&#x4ee3;&#x7801;">
+<node CREATED="1533566101222" ID="ID_1564720180" MODIFIED="1533601892714" TEXT="&#x6587;&#x4ef6;01">
+<node CREATED="1533601877639" ID="ID_312067491" MODIFIED="1533601883010" TEXT="&#x6587;&#x4ef6;&#x540d;">
+<node CREATED="1533566128364" ID="ID_667444257" MODIFIED="1533566133090" TEXT="HelloWorld.java"/>
+</node>
+<node CREATED="1533601884745" ID="ID_396242128" MODIFIED="1533601889363" TEXT="&#x6587;&#x4ef6;&#x5185;&#x5bb9;">
+<node CREATED="1533566110956" ID="ID_1131654117" MODIFIED="1533566124603" TEXT="public class HelloWorld {&#xa;    public static void main(String[] args) {&#xa;        System.out.println(&quot;Hello World&quot;);&#xa;    }&#xa;}"/>
+</node>
+</node>
+</node>
+<node CREATED="1533566135164" ID="ID_1145736921" MODIFIED="1533566139406" TEXT="&#x7f16;&#x8bd1;&amp;&#x8fd0;&#x884c;">
+<node CREATED="1533566142646" ID="ID_271107185" MODIFIED="1533566153110" TEXT="javac HelloWorld.java"/>
+<node CREATED="1533566153455" ID="ID_810179396" MODIFIED="1533566160170" TEXT="java HelloWorld"/>
+</node>
+</node>
+<node CREATED="1533602067200" ID="ID_1410633158" MODIFIED="1533602364562" TEXT="&#x7b2c;&#x4e00;&#x4e2a;&#x7a97;&#x53e3;&#x7a0b;&#x5e8f;">
+<node CREATED="1533566096850" ID="ID_1709165341" MODIFIED="1533566099455" TEXT="&#x4ee3;&#x7801;">
+<node CREATED="1533566101222" ID="ID_1346604399" MODIFIED="1533601892714" TEXT="&#x6587;&#x4ef6;01">
+<node CREATED="1533601877639" ID="ID_1050489780" MODIFIED="1533601883010" TEXT="&#x6587;&#x4ef6;&#x540d;">
+<node CREATED="1533566128364" ID="ID_1470176321" MODIFIED="1533602096547" TEXT="ImageView.java"/>
+</node>
+<node CREATED="1533601884745" FOLDED="true" ID="ID_795769879" MODIFIED="1533602194531" TEXT="&#x6587;&#x4ef6;&#x5185;&#x5bb9;">
+<node CREATED="1533566110956" ID="ID_619605756" MODIFIED="1533602192437" TEXT="&#xa;import java.awt.event.ActionEvent;&#xa;import java.awt.event.ActionListener;&#xa;import java.io.File;&#xa;&#xa;import javax.swing.ImageIcon;&#xa;import javax.swing.JFileChooser;&#xa;import javax.swing.JFrame;&#xa;import javax.swing.JLabel;&#xa;import javax.swing.JMenu;&#xa;import javax.swing.JMenuBar;&#xa;import javax.swing.JMenuItem;&#xa;&#xa;public class ImageViewer {&#xa;    public static void main(String[] args) {&#xa;        ImageViewerFrame frame = new ImageViewerFrame();&#xa;        frame.setTitle(&quot;ImageViewer&quot;);&#xa;        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xa;        frame.setVisible(true);&#xa;    }&#xa;}&#xa;&#xa;class ImageViewerFrame extends JFrame {&#xa;&#xa;    private static final int DEFAULT_WIDTH = 300;&#xa;    private static final int DEFAULT_HEIGHT = 400;&#xa;&#xa;    public ImageViewerFrame() {&#xa;        setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);&#xa;&#xa;        JLabel label = new JLabel();&#xa;        add(label);&#xa;&#xa;        JFileChooser chooser = new JFileChooser();&#xa;        chooser.setCurrentDirectory(new File(&quot;.&quot;));&#xa;        &#xa;        JMenuBar menuBar = new JMenuBar();&#xa;        setJMenuBar(menuBar);&#xa;        &#xa;        JMenu menu = new JMenu(&quot;File&quot;);&#xa;        menuBar.add(menu);&#xa;        &#xa;        JMenuItem open = new JMenuItem(&quot;Open&quot;);&#xa;        menu.add(open);&#xa;        &#xa;        open.addActionListener(e -&gt; {&#xa;            int result = chooser.showOpenDialog(null);&#xa;            if(result == JFileChooser.APPROVE_OPTION) {&#xa;                String path = chooser.getSelectedFile().getPath();&#xa;                label.setIcon(new ImageIcon(path));&#xa;            }&#xa;        });&#xa;        &#xa;        JMenuItem exit = new JMenuItem(&quot;Exit&quot;);&#xa;        menu.add(exit);&#xa;        &#xa;        exit.addActionListener(new ActionListener() {&#xa;&#xa;        @Override&#xa;        public void actionPerformed(ActionEvent e) {&#xa;            System.exit(0);&#xa;        }&#xa;&#xa;        });;&#xa;        &#xa;        &#xa;    }&#xa;}"/>
+</node>
+</node>
+</node>
+<node CREATED="1533566135164" ID="ID_810251602" MODIFIED="1533566139406" TEXT="&#x7f16;&#x8bd1;&amp;&#x8fd0;&#x884c;">
+<node CREATED="1533566142646" ID="ID_710777509" MODIFIED="1533602129594" TEXT="javac ImageViewer.java"/>
+<node CREATED="1533566153455" ID="ID_1018455860" MODIFIED="1533602187712" TEXT="java ImageViewer"/>
+</node>
+</node>
+<node CREATED="1533601372475" ID="ID_596713749" MODIFIED="1533601383054" TEXT="&#x7b2c;&#x4e00;&#x4e2a;applet&#x7a0b;&#x5e8f;">
+<node CREATED="1533601386137" ID="ID_1448915610" MODIFIED="1533601389167" TEXT="&#x4ee3;&#x7801;">
+<node CREATED="1533566101222" ID="ID_124828885" MODIFIED="1533601892714" TEXT="&#x6587;&#x4ef6;01">
+<node CREATED="1533601877639" ID="ID_312296285" MODIFIED="1533601883010" TEXT="&#x6587;&#x4ef6;&#x540d;">
+<node CREATED="1533566128364" ID="ID_129775334" MODIFIED="1533601938329" TEXT="HelloWorldApplet.java"/>
+</node>
+<node CREATED="1533601884745" FOLDED="true" ID="ID_913677242" MODIFIED="1533601921837" TEXT="&#x6587;&#x4ef6;&#x5185;&#x5bb9;">
+<node CREATED="1533566110956" ID="ID_1142134049" MODIFIED="1533601920013" TEXT="import java.awt.BorderLayout;&#xa;import java.awt.EventQueue;&#xa;import java.awt.GridLayout;&#xa;&#xa;import javax.swing.JApplet;&#xa;import javax.swing.JLabel;&#xa;import javax.swing.JPanel;&#xa;import javax.swing.JTextField;&#xa;&#xa;public class HelloWorldApplet extends JApplet {&#xa;&#x9;&#xa;&#x9;private JTextField input;&#xa;&#x9;private JLabel label;&#xa;&#xa;&#x9;public void init() {&#xa;&#x9;&#x9;EventQueue.invokeLater(() -&gt; {&#xa;&#x9;&#x9;&#x9;input = new JTextField(&quot;kk&quot;);&#xa;&#x9;&#x9;&#x9;label = new JLabel();&#xa;&#x9;&#x9;&#x9;JPanel panel = new JPanel();&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;&#x9;panel.setLayout(new GridLayout(1, 3));&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;&#x9;panel.add(new JLabel(&quot;&#x8bf7;&#x8f93;&#x5165;&#x540d;&#x5b57;:&quot;));&#xa;&#x9;&#x9;&#x9;panel.add(input);&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;&#x9;setLayout(new BorderLayout());&#xa;&#x9;&#x9;&#x9;add(panel, BorderLayout.NORTH);&#xa;&#x9;&#x9;&#x9;add(label, BorderLayout.CENTER);&#xa;&#x9;&#x9;});&#xa;&#x9;}&#xa;&#x9;&#xa;&#x9;public void start() {&#xa;&#x9;&#x9;new Thread(() -&gt; {&#xa;&#x9;&#x9;&#x9;for(;;) {&#xa;&#x9;&#x9;&#x9;&#x9;try {&#xa;&#x9;&#x9;&#x9;&#x9;&#x9;label.setText(&quot;Hi &quot; + input.getText());&#xa;&#x9;&#x9;&#x9;&#x9;&#x9;Thread.sleep(10);&#xa;&#x9;&#x9;&#x9;&#x9;} catch (InterruptedException e) {&#xa;&#x9;&#x9;&#x9;&#x9;&#x9;e.printStackTrace();&#xa;&#x9;&#x9;&#x9;&#x9;}&#xa;&#x9;&#x9;&#x9;}&#xa;&#x9;&#x9;}).start();&#xa;&#x9;}&#xa;}&#xa;"/>
+</node>
+</node>
+<node CREATED="1533566101222" ID="ID_1569371638" MODIFIED="1533601900502" TEXT="&#x6587;&#x4ef6;02">
+<node CREATED="1533601877639" ID="ID_583907109" MODIFIED="1533601883010" TEXT="&#x6587;&#x4ef6;&#x540d;">
+<node CREATED="1533566128364" ID="ID_1037072970" MODIFIED="1533601965147" TEXT="HelloWorldApplet.html"/>
+</node>
+<node CREATED="1533601884745" FOLDED="true" ID="ID_1670258429" MODIFIED="1533601952997" TEXT="&#x6587;&#x4ef6;&#x5185;&#x5bb9;">
+<node CREATED="1533566110956" ID="ID_445751194" MODIFIED="1533601951460" TEXT="&lt;!DOCTYPE html&gt;&#xa;&lt;html&gt;&#xa;&#x9;&lt;head&gt;&#xa;&#x9;&#x9;&lt;meta charset=&quot;utf-8&quot; /&gt;&#xa;&#x9;&#x9;&lt;title&gt;RoadApplet&lt;/title&gt;&#xa;&#x9;&lt;/head&gt;&#xa;&#x9;&lt;body&gt;&#xa;&#x9;&#x9;&lt;applet code=&quot;HelloWorldApplet.class&quot; archive=&quot;HelloWorldApplet.jar&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;&lt;/applet&gt;&#xa;&#x9;&lt;/body&gt;&#xa;&lt;/html&gt;"/>
+</node>
+</node>
+</node>
+<node CREATED="1533601389423" ID="ID_933093428" MODIFIED="1533601396284" TEXT="&#x7f16;&#x8bd1;&amp;&#x8fd0;&#x884c;">
+<node CREATED="1533601597746" ID="ID_459553205" MODIFIED="1533601764295" TEXT="javac HelloWorldApplet.java"/>
+<node CREATED="1533601600979" ID="ID_1385051232" MODIFIED="1533601778321" TEXT="jar -cvf HelloWorldApplet.jar HelloWorldApplet.class"/>
+<node CREATED="1533601674578" ID="ID_968960941" MODIFIED="1533601791703" TEXT="appletviewer HelloWorldApplet.html"/>
+</node>
+</node>
+</node>
+<node CREATED="1533601991385" ID="ID_965156340" MODIFIED="1533602000287" POSITION="right" TEXT="03.Java&#x57fa;&#x672c;&#x7a0b;&#x5e8f;&#x8bbe;&#x8ba1;&#x7ed3;&#x6784;">
+<node CREATED="1533602301948" ID="ID_909803159" MODIFIED="1533602304733" TEXT="&#x6570;&#x636e;&#x7c7b;&#x578b;"/>
+<node CREATED="1533602304972" ID="ID_109802975" MODIFIED="1533602309123" TEXT="&#x6d41;&#x7a0b;&#x63a7;&#x5236;"/>
 </node>
 </node>
 </map>

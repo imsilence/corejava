@@ -20,5 +20,6 @@
     </dependencies>
     <modules>
         <module>ch01</module>
-    </modules>
+        <module>ch02</module>
+  </modules>
 </project>

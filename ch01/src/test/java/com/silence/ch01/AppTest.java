@@ -1,4 +1,4 @@
-package com.silence;
+package com.silence.ch01;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
