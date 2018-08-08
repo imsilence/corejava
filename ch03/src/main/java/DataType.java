@@ -16,13 +16,6 @@ public class DataType {
         System.out.printf("long min: %d, max: %d\n", Long.MIN_VALUE, Long.MAX_VALUE);
         System.out.printf("long min: %d, max: %d\n", 0X80_00_00_00_00_00_00_00L, 0X7F_FF_FF_FF_FF_FF_FF_FFL);
 
-        byte bsum = (byte)(age + age);
-        short ssum = (short)(height + height);
-        int isum = weight + weight;
-        long lsum = id + id;
-
-        System.out.printf("bsum: %d, ssum: %d, isum: %d, lsum: %d", bsum, ssum, isum, lsum);
-
         float pi = 3.14F;
         double money = 1000.31D;
 
@@ -32,10 +25,6 @@ public class DataType {
         System.out.printf("float min: %e, max: %e\n", Float.MIN_VALUE, Float.MAX_VALUE);
         System.out.printf("double min: %e, max: %e\n", Double.MIN_VALUE, Double.MAX_VALUE);
 
-        float fsum = pi + pi;
-        double dsum = money + money;
-
-        System.out.printf("fsum: %f, dsum: %f\n", fsum, dsum);
 
         char ch = 'A';
         char registerNotation = '\u2122';
@@ -46,5 +35,24 @@ public class DataType {
         boolean isBoy = true;
 
         System.out.println(isBoy);
+
+        System.out.println(Math.sqrt(4));
+        System.out.println(Math.pow(4, 2));
+
+        final float PI = 3.1415936F;
+
+        System.out.printf("final PI: %f", PI);
+
+        byte bsum = (byte)(age + age);
+        short ssum = (short)(height + height);
+        int isum = weight + weight;
+        long lsum = id + id;
+
+        System.out.printf("bsum: %d, ssum: %d, isum: %d, lsum: %d\n", bsum, ssum, isum, lsum);
+
+        float fsum = pi + pi;
+        double dsum = money + money;
+
+        System.out.printf("fsum: %f, dsum: %f\n", fsum, dsum);
     }
 }
