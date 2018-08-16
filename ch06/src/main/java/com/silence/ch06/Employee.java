@@ -24,20 +24,20 @@ public class Employee implements Comparable<Employee>, Cloneable, INamed, IAged 
             + "[age=" + age + "]";
     }
 
-	@Override
-	public String getName() {
-		return name;
-	}
-	
+    @Override
+    public String getName() {
+        return name;
+    }
 
-	@Override
-	public void setAge(int aAge) {
-		age = aAge;
-	}
-	
-	public Employee clone() throws CloneNotSupportedException {
-		return (Employee)super.clone();
-	}
+
+    @Override
+    public void setAge(int aAge) {
+        age = aAge;
+    }
+
+    public Employee clone() throws CloneNotSupportedException {
+        return (Employee)super.clone();
+    }
 
     public static void main(String[] args) throws CloneNotSupportedException {
         Employee[] employee = new Employee[3];
@@ -54,11 +54,11 @@ public class Employee implements Comparable<Employee>, Cloneable, INamed, IAged 
         }
         System.out.println(IConstans.getPackage());
         System.out.println(IConstans.PACKAGE);
-        
+
         Employee me = new Employee("kk", 30);
         Employee me2 = me;
         Employee me3 = me.clone();
-        
+
         me2.setAge(31);
         System.out.println(me);
         System.out.println(me2);
