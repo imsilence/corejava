@@ -1,47 +1,35 @@
 package com.silence.ch14;
 
 import java.util.Arrays;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
-public class Bank {
+public class SyncBank {
 
     private final int[] accounts;
-    private Lock lock = new ReentrantLock();
 
-    public Bank(int n, int balance) {
+    public SyncBank(int n, int balance) {
+        
         accounts = new int[n];
         Arrays.fill(accounts, balance);
     }
 
-    public void transfer(int from, int to, int amount) throws InterruptedException {
-        lock.lock();
-        try {
-            if(accounts[from] < amount) {
-                System.out.println("not enough balance, from=" + from + ", to=" + to + ", amount=" + amount);
-                return;
-            }
-            System.out.print(Thread.currentThread());
-            accounts[from] -= amount;
-            Thread.sleep(100);
-            accounts[to] += amount;
-            System.out.println("Total: " + getTotalBalance() + ", from=" + from + ", to=" + to + ", amount=" + amount);
-        } finally {
-            lock.unlock();
+    public synchronized void transfer(int from, int to, int amount) throws InterruptedException {
+        while(accounts[from] < amount) {
+            System.out.println(Thread.currentThread() + ", not enough balance, from=" + from + ", to=" + to + ", amount=" + amount);
+            wait();
         }
+        accounts[from] -= amount;
+        Thread.sleep(100);
+        accounts[to] += amount;
+        System.out.println(Thread.currentThread() + ", Total: " + getTotalBalance() + ", from=" + from + ", to=" + to + ", amount=" + amount);
+        notifyAll();
     }
 
-    public double getTotalBalance() {
-        lock.lock();
-        try {
-            double sum = 0;
-            for(double account : accounts) {
-                sum += account;
-            }
-            return sum;
-        } finally {
-            lock.unlock();
+    public synchronized double getTotalBalance() {
+        double sum = 0;
+        for(double account : accounts) {
+            sum += account;
         }
+        return sum;
     }
 
     public int size() {
@@ -53,7 +41,7 @@ public class Bank {
         final int INIT_BALANCE = 1000;
         final int MAX_AMOUNT = 1000;
         final int DELAY = 10;
-        Bank bank = new Bank(N_ACCOUNTS, INIT_BALANCE);
+        SyncBank bank = new SyncBank(N_ACCOUNTS, INIT_BALANCE);
         for(int i = 0; i < N_ACCOUNTS; ++i) {
             int from = i;
             new Thread(() -> {

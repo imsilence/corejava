@@ -1,15 +1,20 @@
 package com.silence.ch14;
 
 import java.util.Arrays;
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Bank {
+public class Bank2 {
 
     private final int[] accounts;
-    private Lock lock = new ReentrantLock();
+    private Lock lock = null;
+    private Condition sufficientFunds = null;
 
-    public Bank(int n, int balance) {
+    public Bank2(int n, int balance) {
+        lock = new ReentrantLock();
+        sufficientFunds = lock.newCondition();
+        
         accounts = new int[n];
         Arrays.fill(accounts, balance);
     }
@@ -17,15 +22,15 @@ public class Bank {
     public void transfer(int from, int to, int amount) throws InterruptedException {
         lock.lock();
         try {
-            if(accounts[from] < amount) {
-                System.out.println("not enough balance, from=" + from + ", to=" + to + ", amount=" + amount);
-                return;
+            while(accounts[from] < amount) {
+                System.out.println(Thread.currentThread() + ", not enough balance, from=" + from + ", to=" + to + ", amount=" + amount);
+                sufficientFunds.await();
             }
-            System.out.print(Thread.currentThread());
             accounts[from] -= amount;
             Thread.sleep(100);
             accounts[to] += amount;
-            System.out.println("Total: " + getTotalBalance() + ", from=" + from + ", to=" + to + ", amount=" + amount);
+            System.out.println(Thread.currentThread() + ", Total: " + getTotalBalance() + ", from=" + from + ", to=" + to + ", amount=" + amount);
+            sufficientFunds.signalAll();
         } finally {
             lock.unlock();
         }
@@ -53,7 +58,7 @@ public class Bank {
         final int INIT_BALANCE = 1000;
         final int MAX_AMOUNT = 1000;
         final int DELAY = 10;
-        Bank bank = new Bank(N_ACCOUNTS, INIT_BALANCE);
+        Bank2 bank = new Bank2(N_ACCOUNTS, INIT_BALANCE);
         for(int i = 0; i < N_ACCOUNTS; ++i) {
             int from = i;
             new Thread(() -> {
